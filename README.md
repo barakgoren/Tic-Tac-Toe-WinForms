@@ -2,7 +2,6 @@
 This project was created just for fun to check my minimal abilities WinForms and C# in general.
 
 # Status: 
-```diff
-! Working
-```
+[![](https://img.shields.io/badge/API-yellow?style=for-the-badge)](https://docs.rs/crate/redant/latest)
+
 
