@@ -13,7 +13,7 @@ namespace NewTicTacToe.Comps
         public Label label3 { get; set; }
         public ColorDialog colorDialog1 { get; set; }
         public Button button1 { get; set; }
-        public UserInput()
+        public UserInput(int x, int y, string label)
         {
             label1 = new Label();
             textBox1 = new TextBox();
@@ -29,7 +29,7 @@ namespace NewTicTacToe.Comps
             label1.Name = "label1";
             label1.Size = new Size(249, 36);
             label1.TabIndex = 2;
-            label1.Text = "Player 1's name:";
+            label1.Text = $"{label}'s name:";
             // 
             // textBox1
             // 
@@ -47,7 +47,7 @@ namespace NewTicTacToe.Comps
             label3.Name = "label3";
             label3.Size = new Size(238, 36);
             label3.TabIndex = 4;
-            label3.Text = "Player 1's color:";
+            label3.Text = $"{label}'s color:";
             // 
             // button1
             // 
@@ -57,6 +57,7 @@ namespace NewTicTacToe.Comps
             button1.TabIndex = 5;
             button1.Text = "Choose color";
             button1.UseVisualStyleBackColor = true;
+            button1.Tag = this;
             // 
             // this
             // 
@@ -64,7 +65,7 @@ namespace NewTicTacToe.Comps
             this.Controls.Add(button1);
             this.Controls.Add(textBox1);
             this.Controls.Add(label3);
-            this.Location = new Point(240, 420);
+            this.Location = new Point(x, y);
             this.Name = "this";
             this.Size = new Size(674, 282);
             this.TabIndex = 6;
